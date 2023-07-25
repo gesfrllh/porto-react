@@ -27,7 +27,6 @@ const AboutSection = () => {
   return (
     <> 
       <AboutWrapper>
-
         <AboutHeader id="about" data-aos="fade-up">
           <AboutLogo
             to="home"
