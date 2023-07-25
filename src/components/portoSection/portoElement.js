@@ -107,6 +107,11 @@ export const PortoCard = styled.div`
     margin-right: 50px;
   }
 `;
+
+export const LinkRed = styled.a`
+  text-decoration: none;
+`
+
 export const DescWrapper = styled.div`
   width: 250px;
   text-align: center;
@@ -114,7 +119,7 @@ export const DescWrapper = styled.div`
 `;
 export const TitleDesc = styled.p`
   font-family: "Poppins", sans-serif;
-  margin-top: 10px;
+  margin-top: 20px;
   font-weight: 600;
   color: white;
   

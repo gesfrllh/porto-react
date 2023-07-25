@@ -11,22 +11,13 @@ import {
   Mobile
 } from "./contactElement";
 import { FaGithub, FaInstagram, FaWhatsapp, FaLinkedin } from "react-icons/fa";
-import "./svgC.css";
 
 const ContactSec = () => {
+    const phoneNumber = '6282125446495';
+    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}`  
   return (
     <>
       <ContactContainer id="contact">
-        <div class="custom-shape-divider-top-1669935756">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path d="M1200 0L0 0 598 50 1200 100 0z" class="shape-fill"></path>
-          </svg>
-        </div>
           <Mobile>
             <FaInstagram style={{fontSize:'18px', cursor:'pointer'}}/>
             <FaGithub style={{fontSize:'18px', cursor:'pointer'}} />
@@ -43,19 +34,19 @@ const ContactSec = () => {
           </ContentWrapper>
           <TextWrapper>
             <H1Text>Contact us</H1Text>
-            <ListTxt>
+            <ListTxt href="https://www.instagram.com/gesfrllh/" target="_blank">
               {" "}
               <FaInstagram style={{fontSize:'18px'}}/> Gesfrllh
             </ListTxt>
-            <ListTxt>
+            <ListTxt href="https://github.com/gesfrllh" target="_blank">
               {" "}
               <FaGithub style={{fontSize:'18px'}}/> gesfrllh
             </ListTxt>
-            <ListTxt>
+            <ListTxt href={url} target="_blank">
               {" "}
               <FaWhatsapp style={{fontSize:'18px'}}/> 0821 - 2544 - 6495
             </ListTxt>
-            <ListTxt>
+            <ListTxt href="https://www.linkedin.com/in/dwi-arya-safrulloh-073208188/" target="_blank">
               {" "}
               <FaLinkedin style={{fontSize:'18px'}}/> Dwi Arya Sfrllh
             </ListTxt>

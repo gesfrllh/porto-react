@@ -12,9 +12,10 @@ import {
   CratedDate,
   PortoTitle,
   PortoDesc,
+  LinkRed
 } from "./portoElement";
-import ImgPorto from "../../images/Project1.png";
-import ImgPortofolio from "../../images/Project2.png";
+import ImgPorto from "../../images/project3.png";
+import ImgPortofolio from "../../images/project4.png";
 import "./svg.css";
 import AOS from "aos";
 import '../../../node_modules/aos/dist/aos.css'
@@ -26,16 +27,6 @@ const PortoSection = () => {
   
   return (
     <>
-      <div class="custom-shape-divider-top-1669334795">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
-        </svg>
-      </div>
       <PortoContainer >
         <PortoHeader data-aos="fade-down" id="portofolio">
             <PortoTitle>Portofolio</PortoTitle>
@@ -43,28 +34,31 @@ const PortoSection = () => {
         <PortoWrapper>
           <DescriptionPorto>
             <PortoDesc data-aos="fade-up">
-              Hi this my little project, and i building this project with coffe,
-              because i really like it the coffe, I made this small project alone, and I used several frameworks like React, and for the other web portfolio I made with pure html, css and vanilla js
+            HI this is my project, I am working on several Dashboard projects to make sales, purchases and view data in real time, for the stack I use vue in these two projects
             </PortoDesc>
           </DescriptionPorto>
           <ProjectSec >
             <div data-aos="fade-left" duration="4000">
             <PortoCard >
+            <LinkRed href="https://office.aksestani.com/dashboard" target="_blank">
               <Img src={ImgPorto} alt="" width={500} />
+            </LinkRed>
             </PortoCard>
             </div>
             <DescWrapper data-aos="fade-left">
-              <TitleDesc>Bank Virtual React JS</TitleDesc>
-              <CratedDate>08/19/2022</CratedDate>
+              <TitleDesc>Dashboard Aksestani</TitleDesc>
+              <CratedDate>01/19/2023 - Now</CratedDate>
             </DescWrapper>
             <div data-aos="fade-right">
             <PortoCard >
+            <LinkRed href="https://app.lemburhiling.com/" target="_blank">
               <Img src={ImgPortofolio} alt="" width={500} />
+            </LinkRed>
             </PortoCard>
             </div>
             <DescWrapper data-aos="fade-right" >
-              <TitleDesc>Portofolio HTML CSS JS</TitleDesc>
-              <CratedDate>05/14/2022</CratedDate>
+              <TitleDesc>Dashboard Lembur Hiling</TitleDesc>
+              <CratedDate>03/14/2023 - Now</CratedDate>
             </DescWrapper>
           </ProjectSec>
         </PortoWrapper>
