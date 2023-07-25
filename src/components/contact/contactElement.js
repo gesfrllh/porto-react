@@ -18,7 +18,6 @@ export const ContactWrapper = styled.div`
   width: 100%;
   justify-content: space-around;  
   align-items: center;
-  margin-top: -110px;
 
   @media screen and (max-width: 768px){
     display: none;
@@ -86,11 +85,13 @@ export const H1Text = styled.p`
   }
 `;
 
-export const ListTxt = styled.p`
+export const ListTxt = styled.a`
   margin: 0 0 0 10px;
   padding: 5px;
   font-size: 14px;
+  text-decoration: none;
   font-family: 'Poppins';
+  color: #fff;
 
   @media screen and (max-width: 768px){
     display: none;
